@@ -1,0 +1,30 @@
+<html>
+    <head><title>API Crud</title></head>
+    <body>
+        <h1>Welcome to peak API</h1>
+        <div>To use this API please go <a href="/api/peak">there</a> </div>
+
+        <p>To get all peak registered in the database go to <a href="/api/peak">domain_name/api/peak</a></p>
+        <p>You can use the form or POST to url "domain_name/api/peak" in order to create a new peak </p>
+        <p>The POST body request should be like below:</p>
+        {
+            "name":"Mont_Blanc",
+            "elevation":4808,
+            "location": {
+                    "type": "Point",
+                    "coordinates": [
+                        -4.078734191134572,
+                        23.78021472413093
+                    ]
+                }
+        }
+
+        <p>Once created you can UPDATE, DELETE by going to  /api/peak/peak_id</p>
+
+
+    </body>
+</html>
+<style>
+    body{font-family: sans-serif;}
+    h1{display: flex;}
+</style>

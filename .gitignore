@@ -1,0 +1,4 @@
+.vscode
+data/db/*
+peak_crud/migrations/*
+
