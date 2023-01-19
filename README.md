@@ -33,6 +33,12 @@ To delete a particular peak :
 
 You can use the embedded doc to POST peak at :
 `POST localhost:8000/api/peak`
+the location field in the form should be like:
+```json
+{"type": "Point", "coordinates": [6.952242, 48.1696017]}
+```
+
+
 Or :
 `POST localhost:8000/api/peak`
 with this content in request body:
